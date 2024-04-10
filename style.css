@@ -16,14 +16,15 @@ body {
         ),
         radial-gradient(at 18.2% 73.1%, hsl(250, 28%, 53%) 0px, transparent 50%),
         radial-gradient(at 84.6% 77.2%, hsl(229, 87%, 54%) 0px, transparent 50%),
-        radial-gradient(at 1.8% 26.4%, hsl(322, 60%, 52%) 0px, transparent 50%);
+        radial-gradient(at 50% 100%, hsl(322, 60%, 52%) 0px, transparent 50%),
+        radial-gradient(at 2% 8%, hsl(322, 60%, 52%) 0px, transparent 50%);
 }
 
 .containter {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* align-items: center; */
+    width: 70%;
     height: 80%;
     max-width: 500px;
     overflow: hidden;
@@ -35,15 +36,26 @@ body {
 
 .display {
     display: flex;
+    flex-direction: column;
     color: rgba(0, 0, 0, 0.7);
     text-shadow: 0px 0px 50px rgba(255, 255, 255, 0.8);
-    font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     flex-grow: 1;
     justify-content: end;
     align-items: end;
     padding: 1.5rem 2rem;
+}
+
+.history {
+    display: flex;
+    height: inherit;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#calc {
+    font-size: 2rem !important;
 }
 
 .calculator {
@@ -112,6 +124,7 @@ body {
 }
 
 button {
+    cursor: pointer;
     height: 4rem;
     width: 4rem;
     background-color: rgba(255, 255, 255, 0.5);
@@ -127,4 +140,22 @@ button {
 
 #dot {
     font-size: 0.5rem;
+}
+
+.fa-solid {
+    pointer-events: none !important;
+}
+
+#showHistory {
+    position: absolute !important;
+    justify-self: end;
+    align-self: flex-end;
+    margin: 10px;
+    cursor: pointer;
+    &:hover {
+        color: rgba(0, 0, 0, 1);
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+.fa-solid.fa-history {
 }

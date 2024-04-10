@@ -12,7 +12,13 @@
     </head>
     <body>
         <div class="containter">
-            <div class="display">1+2</div>
+            <button id="showHistory">
+                <i class="fa-solid fa-history"></i>
+            </button>
+            <div id="display" class="display">
+                <div id="history" class="history">${entry}</div>
+                <div id="calc">33</div>
+            </div>
             <div class="calculator">
                 <div class="section-1">
                     <div class="funtions right">
@@ -49,19 +55,19 @@
                 </div>
                 <div class="section-2">
                     <div class="funtions left">
-                        <button class="funtion-btn" id="divide">
+                        <button class="funtion-btn" id="÷">
                             <i class="fa-solid fa-divide"></i>
                         </button>
-                        <button class="funtion-btn" id="multiply">
+                        <button class="funtion-btn" id="x">
                             <i class="fa-solid fa-xmark"></i>
                         </button>
-                        <button class="funtion-btn" id="subtract">
+                        <button class="funtion-btn" id="-">
                             <i class="fa-solid fa-minus"></i>
                         </button>
-                        <button class="funtion-btn" id="add">
+                        <button class="funtion-btn" id="+">
                             <i class="fa-solid fa-plus"></i>
                         </button>
-                        <button class="funtion-btn" id="equal">
+                        <button class="funtion-btn" id="equals">
                             <i class="fa-solid fa-equals"></i>
                         </button>
                     </div>
